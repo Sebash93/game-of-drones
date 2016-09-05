@@ -1,4 +1,7 @@
 # Game of drones
+### Requirements
+This game requires Node.js, npm, Grunt and Bower to be globally installed in order to run properly.
+
 ### Initial setup
 ```sh
 $ npm install && run setup
@@ -21,5 +24,5 @@ Inside the services/state.js you change the "moves" object for something like th
     "scissors": { move: "scissors", kills: "paper"},
     "string": { move: "string", kills: "dog"},
     "dog": { move: "dog", kills: "paper"}
-},
+}
 ```
