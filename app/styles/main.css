@@ -1,0 +1,157 @@
+@import 'https://fonts.googleapis.com/css?family=Baloo|Open+Sans';
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Baloo';
+  color: #fff;
+  font-size: 16px;
+  overflow: hidden;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+a:hover {
+  color: #212121;
+}
+a.button {
+  background-color: #ffa000;
+  font-family: 'Open Sans';
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-size: 28px;
+  border: 3px solid #ffa000;
+  transition: all 0.3s ease;
+}
+a.button:hover {
+  border-color: #fff;
+  background-color: transparent;
+  color: #fff;
+  padding: 10px 65px;
+  border-radius: 15px;
+}
+a.button.accent {
+  background-color: #009688;
+  border: 3px solid #009688;
+}
+a.button.small {
+  font-family: 'Baloo';
+  font-size: 18px;
+  padding: 0px 10px;
+  margin: 20px 0px;
+}
+input[type="text"] {
+  font-size: 24px;
+  border-radius: 8px;
+  border: 3px solid #fff;
+  background: transparent;
+  padding: 10px 20px;
+  outline: none;
+  color: #fff;
+  margin: 0 10px;
+}
+input[type="text"]::-webkit-input-placeholder {
+  color: #fff;
+}
+.container {
+  height: 100vh;
+}
+.wrapper {
+  flex-grow: 1;
+  min-height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  font-size: 72px;
+  align-self: flex-start;
+}
+.logo-stick {
+  font-size: 24px;
+  background-color: #ffa000;
+  padding: 0px 10px;
+  border-radius: 0px 8px 8px 0px;
+  position: absolute;
+  top: 20px;
+  animation-delay: 2s;
+}
+.background-main {
+  background-color: #ffc107;
+}
+.background-accent {
+  background-color: #009688;
+}
+.description {
+  font-family: 'Open Sans';
+  font-size: 32px;
+  margin: 20px 0px;
+}
+#welcome .slogan {
+  font-family: 'Open Sans';
+  font-size: 28px;
+  animation-delay: 0.6s;
+  margin-top: -30px;
+  margin-bottom: 40px;
+}
+#welcome #play-now-btn {
+  animation-delay: 1.5s;
+  margin-bottom: 20px;
+}
+#welcome #score-board-btn {
+  animation-delay: 1.5s;
+}
+#rounds-title {
+  font-size: 42px;
+}
+.player-info {
+  background-color: #ffa000;
+  font-family: 'Open Sans';
+  padding: 5px 20px;
+  font-size: 28px;
+  border-radius: 8px;
+}
+.player-info.accent {
+  background-color: #009688;
+}
+.player-info .counter {
+  font-family: 'Baloo';
+  margin-left: 30px;
+}
+.options-list {
+  list-style: none;
+  margin: 10px 0px 0px;
+  padding: 0;
+}
+.options-list li {
+  font-size: 24px;
+  text-transform: uppercase;
+  border: 3px solid #fff;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.5s all ease;
+}
+.options-list li:hover {
+  background-color: #fff;
+  color: #ffa000;
+  letter-spacing: 10px;
+}
+.round-winner {
+  font-size: 48px;
+  margin-top: 18px;
+  text-transform: uppercase;
+}
+#score-board ol {
+  font-size: 24px;
+}
+#score-board ol li {
+  text-transform: capitalize;
+}
+#score-board .title {
+  color: #212121;
+  font-size: 42px;
+  text-align: center;
+}

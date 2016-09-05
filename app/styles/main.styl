@@ -1,0 +1,157 @@
+// Imports
+@import 'https://fonts.googleapis.com/css?family=Baloo|Open+Sans';
+
+// Variables
+main-color = #FFC107
+main-color-dark = #FFA000
+accent-color = #009688
+black-color = #212121
+main-font = 'Baloo'
+accent-font = 'Open Sans'
+
+// Globals
+body,
+html
+  margin 0
+  padding 0
+  font-family main-font
+  color #fff
+  font-size 16px
+  overflow: hidden;
+
+a
+  color: #fff
+  text-decoration: none
+  font-size 24px
+  cursor pointer
+  &:hover
+    color black-color
+  &.button
+    background-color: main-color-dark
+    font-family: accent-font
+    padding: 10px 25px;
+    border-radius: 8px
+    font-size: 28px
+    border: 3px solid main-color-dark
+    transition: all 0.3s ease
+    &:hover
+      border-color: white
+      background-color: transparent;
+      color #fff
+      padding 10px 65px
+      border-radius: 15px
+    &.accent
+      background-color: accent-color
+      border 3px solid accent-color
+    &.small
+      font-family main-font
+      font-size: 18px
+      padding: 0px 10px
+      margin 20px 0px
+
+input[type="text"]
+  font-size 24px
+  border-radius: 8px
+  border: 3px solid #fff
+  background: transparent
+  padding: 10px 20px
+  outline: none
+  color: #fff
+  margin: 0 10px
+  &::-webkit-input-placeholder
+    color #fff
+
+.container
+  height: 100vh
+
+.wrapper
+  flex-grow: 1
+  min-height: 100%
+  align-items: center
+  justify-content: center
+
+.logo
+  font-size: 72px
+  align-self: flex-start
+
+.logo-stick
+  font-size: 24px
+  background-color: main-color-dark;
+  padding: 0px 10px
+  border-radius: 0px 8px 8px 0px
+  position absolute
+  top 20px
+  animation-delay 2s
+
+// Helper classes
+.background-main
+  background-color: main-color
+.background-accent
+  background-color: accent-color
+
+.description
+  font-family: accent-font
+  font-size 32px
+  margin 20px 0px
+
+// Sections
+
+// - Welcome
+#welcome
+  .slogan
+    font-family: accent-font
+    font-size 28px
+    animation-delay: 0.6s
+    margin-top -30px
+    margin-bottom: 40px
+  #play-now-btn
+    animation-delay: 1.5s
+    margin-bottom: 20px
+  #score-board-btn
+    animation-delay: 1.5s
+
+// - Game
+  #rounds-title
+    font-size: 42px
+  .player-info
+    background-color main-color-dark
+    font-family accent-font
+    padding: 5px 20px
+    font-size: 28px
+    border-radius: 8px
+    &.accent
+      background-color: accent-color
+    .counter
+      font-family: main-font
+      margin-left 30px
+  .options-list
+    list-style: none
+    margin 10px 0px 0px
+    padding 0
+    li
+      font-size 24px
+      text-transform: uppercase;
+      border 3px solid #fff
+      border-radius 8px
+      margin-bottom 10px
+      cursor pointer
+      transition: 0.5s all ease
+      &:hover
+        background-color: #fff
+        color: main-color-dark
+        letter-spacing: 10px
+  .round-winner
+    font-size: 48px
+    margin-top: 18px
+    text-transform: uppercase;
+
+// - Score-board
+#score-board
+  ol
+    font-size: 24px
+    li
+      text-transform: capitalize;
+  .title
+    color black-color
+    font-size: 42px
+    text-align: center;

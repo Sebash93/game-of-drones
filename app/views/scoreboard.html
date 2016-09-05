@@ -1,0 +1,15 @@
+<section id="score-board">
+  <div class="col-xs-12 center-xs title">
+    Scoreboard - Hall of fame -
+  </div>
+  <div class="col-xs-12">
+    <ol>
+      <li ng-repeat="player in players | orderBy:'-gamesWon'">
+        {{player.name}} //  {{player.gamesWon}} (Won) - {{player.gamesPlayed}} (Played)
+      </li>
+    </ol>
+  </div>
+  <div class="col-xs-12">
+    <a href="#/">Go back to game</a>
+  </div>
+</section>

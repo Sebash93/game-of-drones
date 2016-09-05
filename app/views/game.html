@@ -1,0 +1,34 @@
+<div class="col-xs-12">
+  <div class="row center-xs" id="rounds-title"> - Round ({{gameData.round}}/3) - </div>
+  <div class="row center-xs">
+    <div class="col-xs-6">
+      <label class="player-info">
+        {{gameData.playersNames[1]}}'s turn
+        <span class="counter">{{gameData.playersCount[1]}}</span>
+      </label>
+      <div ng-show="gameData.currentPlayer == 1 && !gameData.winner">
+        <ul class="options-list">
+          <li ng-repeat="(key, option) in moves" ng-click="chooseOption(key)">{{option.move}}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <label class="player-info accent">
+        {{gameData.playersNames[2]}}
+        <span class="counter">{{gameData.playersCount[2]}}</span>
+      </label>
+      <div ng-show="gameData.currentPlayer == 2 && !gameData.winner">
+        <ul class="options-list">
+          <li ng-repeat="(key, option) in moves" ng-click="chooseOption(key)">{{option.move}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<div class="row center-xs" ng-if="gameData.winner">
+  <div class="round-winner animated flash" ng-hide="gameData.winner == 3">!!!{{gameData.playersNames[gameData.winner]}} Wins!!!</div>
+  <div class="round-winner" ng-show="gameData.winner == 3">That was a tie!</div>
+</div>
+<div class="row center-xs" ng-show="gameData.winner">
+  <a class="button accent small" ng-click="startNewRound()">Next round</a>
+</div>
+</div>

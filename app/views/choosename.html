@@ -1,0 +1,12 @@
+<section class="col-xs-12" id="choose-name">
+  <div class="row center-xs">
+    <div class="description">Please enter the players names</div>
+  </div>
+  <div class="row center-xs">
+    <input type="text" name="first_player" placeholder="Player 1" ng-model="playersNames.first">
+    <input type="text" name="second_player" placeholder="Player 2" ng-model="playersNames.second">
+  </div>
+  <div class="row center-xs">
+    <a class="button accent small animated bounceIn" ng-show="playersNames.first && playersNames.second" ng-click="saveNames()">Ready to play!</a>
+  </div>
+</section>
