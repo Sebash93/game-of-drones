@@ -1,12 +1,5 @@
 'use strict';
 
-/**
- * @ngdoc service
- * @name gameOfDronesApp.requests
- * @description
- * # requests
- * Service in the gameOfDronesApp.
- */
 angular.module('gameOfDronesApp')
   .service('requests', function ($http) {
     var endPoint = 'http://localhost:8080/api';

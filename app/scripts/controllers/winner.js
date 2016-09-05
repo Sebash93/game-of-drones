@@ -1,12 +1,5 @@
 'use strict';
 
-/**
- * @ngdoc function
- * @name gameOfDronesApp.controller:WinnerCtrl
- * @description
- * # WinnerCtrl
- * Controller of the gameOfDronesApp
- */
 angular.module('gameOfDronesApp')
   .controller('WinnerCtrl', function ($scope, $location, state, requests) {
     $scope.absoluteWinner = state.get('absoluteWinner');

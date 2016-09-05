@@ -1,12 +1,5 @@
 'use strict';
 
-/**
- * @ngdoc service
- * @name gameOfDronesApp.state
- * @description
- * # state
- * Service in the gameOfDronesApp.
- */
 angular.module('gameOfDronesApp')
   .service('state', function () {
     var state = {
@@ -39,6 +32,4 @@ angular.module('gameOfDronesApp')
         }
       }
     }
-
-    // AngularJS will instantiate a singleton by calling "new" on this function
   });

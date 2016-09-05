@@ -1,12 +1,5 @@
 'use strict';
 
-/**
- * @ngdoc function
- * @name gameOfDronesApp.controller:GameCtrl
- * @description
- * # GameCtrl
- * Controller of the gameOfDronesApp
- */
 angular.module('gameOfDronesApp')
   .controller('GameCtrl', function ($scope, $location, state) {
     var moves = state.get('moves'),
