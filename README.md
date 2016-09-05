@@ -4,7 +4,7 @@ This game requires Node.js, npm, Grunt and Bower to be globally installed in ord
 
 ### Initial setup
 ```sh
-$ npm install && run setup
+$ npm install && npm run setup
 ```
 ### Launch the API
 ```sh
