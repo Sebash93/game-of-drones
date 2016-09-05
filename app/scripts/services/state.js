@@ -14,7 +14,9 @@ angular.module('gameOfDronesApp')
       moves: {
         "paper": { move: "paper", kills: "rock"},
         "rock": { move: "rock", kills: "scissors"},
-        "scissors": { move: "scissors", kills: "paper"}
+        "scissors": { move: "scissors", kills: "paper"},
+        "string": { move: "string", kills: "dog"},
+        "dog": { move: "dog", kills: "paper"}
       },
       absoluteWinner: null,
       absoluteLoser: null
